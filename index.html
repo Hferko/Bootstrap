@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--a mobil nézet beállítása-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <!--<link href="https://bootswatch.com/4/solar/bootstrap.min.css" rel="stylesheet">-->
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Kezdőlap</a>
+            </li>           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Szolgáltatások
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Web design</a></li>
+                <li><a class="dropdown-item" href="#">Web fejlesztés</a></li>
+                <li><a class="dropdown-item" href="#">Grafikai tervezés</a></li>
+                <li class="dropdown-header">További szolgáltatások:</li>
+                <li><a class="dropdown-item" href="#">Közösségi média marketing</a></li>
+                <li><hr class="dropdown-divider"></li>                
+                <li><a class="dropdown-item" href="#">SEO</a></li>
+              </ul>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>          
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-1" type="search" placeholder="Keresés" aria-label="Keresés">
+            <button class="btn btn-outline-info" type="submit"><img src="img/search.svg" alt="gear"></button>
+          </form>
+          <ul class="navbar-nav right-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <img src="img/person.svg" alt="person">
+                My Account
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">
+                  <img src="img/gear.svg" alt="gear">
+                  Beállítások</a></li>
+                <li><a class="dropdown-item" href="#">
+                  <img src="img/repeat.svg" alt="repeat">
+                  Profil frissítése</a></li>
+                <li><a class="dropdown-item" href="#">
+                  <img src="img/briefcase.svg" alt="brief">
+                  Számlázás</a></li>                
+                <li><hr class="dropdown-divider"></li>                
+                <li><a class="dropdown-item" href="#">
+                  <img src="img/power.svg" alt="out">
+                  Kijelentkezés</a></li>
+              </ul>
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/img1.jpg" class="d-block w-100" alt="Informatika">
+      <div class="carousel-caption d-none d-md-block">
+        <h4>Ismerkedjen a Web design lehetőségeivel</h4>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/java_questions.jpg" class="d-block w-100" alt="Programozás">
+      <div class="carousel-caption d-none d-md-block">
+        <h4>Tanuljon Web oldalt programozni</h4>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/generic_header.jpg" class="d-block w-100" alt="Hálózatok">
+      <div class="carousel-caption d-none d-md-block">
+        <h4>Ismerje meg a grafikus tervezés alapjait</h4>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <!--középre igazított fejléc-felhívóelem -->
+    <div class="container kozep" id="contentHeader">  
+
+      <div class="alert alert-success alert-dismissible fade show" role="alert" id="alertMe">
+        <h4>Success</h4>
+        <p>Íratkozzon fel az E-mail címével, hogy megkapja a hírleveleket és a frissítéseket. </p>       
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <!--
+      <div class="alert alert-success" role="alert" id="alertMe">
+        <button type="button" class="btn-close " data-bs-dismiss="alert" aria-label="Close"></button>
+        <h4>Success</h4> 
+        <p>Íratkozzon fel az E-mail címével, hogy megkapja a hírleveleket és a frissítéseket. </p>       
+      </div>-->
+
+      <div class="page-header">
+        <h1>Elsődleges címsor<br><small>Másodlagos címsor extra tartalommal</small></h1>
+      </div>
+      <p class="lead">Előreformázott kiemelt szöveg, ami használható pl. egy hírlevél felíratkozási felhívásnak</p>
+
+      <a class="btn btn-primary btn" data-bs-toggle="modal" href="#subscribe" role="button">Felíratkozom</a>
+      <a class="btn btn-info btn" href="#" role="button" id="alertButton" onclick="myFunction()">Megnézem a kurzusokat</a>
+
+      <!-- MODAL-->
+      <div class="modal fade" id="subscribe">  
+        <div class="modal-dialog">  
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Felíratkozom most</h4>
+              <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>              
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta facilis modi ut inventore? Nemo libero, quibusdam corporis sequi earum, ...</p>
+
+              <form>
+                <div class="row mb-3">
+                 <label for="inputName" class="col-sm-2 col-form-label">Név:</label>
+                 <div class="col-sm-10">
+                   <input type="text" class="form-control" id="inputName" placeholder="Név">
+                 </div>
+               </div>
+               
+               <div class="row mb-3">
+                 <label for="inputEmail3" class="col-sm-2 col-form-label">E-mail:</label>
+                 <div class="col-sm-10">
+                   <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail">
+                 </div>
+               </div>              
+               <button type="submit" class="btn btn-success btn-sm">Felíratkozás</button>
+             </form>
+              <!--FORM
+              <form action="" class="form-horizontal">
+                <div class="form-group">
+                  <label for="inputName" class="col-sm-2 control-label">Név</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-contol" id="inputName" placeholder="Név" >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail" class="col-sm-2 control-label">E-mail</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-contol" id="inputEmail" placeholder="E-mail" >
+                    <button type="submit" class="btn btn-success btn-sm">Felíratkozás</button>
+                  </div>
+                </div>
+
+              </form>-->
+
+            </div>
+          </div>
+        </div>
+      </div> <!-- MODAL vége-->
+
+    </div>
+    
+    <div class="container" id="jellem">
+      <div class="row">
+        <div class="col-12">
+          <h2>Szolgáltatások</h2>
+          <p class="lead">Ha dolgod nehéz,<br>
+              keress új módszereket,<br> 
+              s megoldást találsz.<br>
+              Mit egyszer megtanultál,<br>
+              örökre kincsed lehet.</p>
+        </div>
+      </div>
+      <div class="row" id="features">
+        <div class="col-sm-4">
+          <div class="card text-dark bg-light mb-3">
+            <div class="card-header">
+              <h3>Tanuljon programozni HTML5-ben</h3>              
+            </div>
+            <img src="img/HTML5.png" alt="HTML5" class="img-circle">
+            <p>A cél még távol.<br>
+                  Menj az utadon tovább,<br>
+                  járd, amint tudod!<br>
+                  Ha így teszel, úgy hiszem,<br>
+                  nem lehet semmi bajod!</p>
+              <a class="btn btn-warning" href="#" role="button">Jelentkezem a tanfolyamra</a>
+          </div>
+        </div>
+        
+        <div class="col-sm-4">
+          <div class="card text-dark bg-light mb-3">
+            <div class="card-header">
+              <h3>Tanuljon programozni CSS3-ben</h3>              
+            </div>
+            <img src="img/CSS3.png" alt="CSS3" class="img-circle">
+            <p>Meggyőződésem,<br>
+                hogy a való nem igaz;<br>
+                miért hinném azt,<br>
+                hogy mit álomnak látok,<br>
+                csak álom és nem igaz?</p>
+              <a class="btn btn-warning" href="#" role="button">Jelentkezem a tanfolyamra</a>
+          </div>
+        </div>
+        
+        <div class="col-sm-4">
+          <div class="card text-dark bg-light mb-3">
+            <div class="card-header">
+              <h3>Tanuljon programozni JavaScript-ben</h3>              
+            </div>
+            <img src="img/Javascript.png" alt="JavaScript" class="img-circle">
+            <p>Ha tudod, hogy az<br>
+                eső a sziklába is<br>
+                üregeket vájhat,<br> 
+                hogy semmi sem változik,<br>
+                tévedés, puszta látszat.</p>
+              <a class="btn btn-warning" href="#" role="button">Jelentkezem a tanfolyamra</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container"> 
+      <div class="row" id="info">
+        <div class="class-col-sm12">
+          <h3>További információk</h3>
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Elérhetőség</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Magunkról</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Profilunk</button>
+            </li>
+          </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <h4> <img src="img/geo-alt.svg" alt="map">Elérhetőségünk</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.626067019127!2d20.474027515135074!3d46.21789319085696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474458a8711db15d%3A0x6a7c911b458a9692!2zTWFrw7M!5e0!3m2!1shu!2shu!4v1616876381562!5m2!1shu!2shu" 
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p><strong>Sárkánymese<br></strong>
+                  Egy hétfejű sárkánykölök csúnyán összevesztek.<br>
+                  Rájuk szólt az anyja, de ő nem maradtak veszteg.<br>
+                  Bár már egy sem emlékeztek, hogy min kapott össze,<br>
+                  Végül leharapta egymást, önmagát is közte.<br>
+                  Ja, hogy hol itt a tanulság? Szájbarágom, tessék:<br>
+                  Minden fejtúltengés vége teljes fejetlenség.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <img src="img/ComputerScience.jpg" alt="Informatika" class="img-thumbnail rounded float-start">
+                <p>
+                <strong>Lepketánc<br></strong>
+                  Mikor a hernyóból lepke lett,
+                  kérkedve repkedett,<br>
+                  hogy fényben keringve mind tovább
+                  csillogtassa hímporát.<br>
+                  A derék kutyának
+                  képére mégis kiült az utálat.<br>
+                  – Villogj csak fent, te szép féreg;
+                  nem lesz nagyobb az értéked!<br>
+                  Hernyó maradsz, bár fent keringsz.
+                  Nem a szárny szab itt mértéket,<br>
+                  hanem a gerinc.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="row">
+                <div class="col-sm-6">
+                  <p>Hagyd, hogy a mosolyod megváltoztassa a világot,
+                     de ne hagyd, hogy a világ megváltoztassa a mosolyod!</p>
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                      <h4 class="list-group-item-heading">HTML5</h4>
+                      <p class="list-group-item-text">
+                        Azért vagyunk a világon, hogy összhangban éljünk. 
+                        Akik megértik ezt, nem harcolnak többé.
+                      </p>
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                      <h4 class="list-group-item-heading">CSS3</h4>
+                      <p class="list-group-item-text">
+                        Nekünk kell a változássá lennünk, amit a világban látni akarunk.
+                      </p>
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                      <h4 class="list-group-item-heading">JavaScript</h4>
+                      <p class="list-group-item-text">
+                        A jóság messziről látszik, mint a Himalája hegye. 
+                        De a gonoszság rejtve oson, mint a sötétben kilőtt nyíl.
+                      </p>
+                    </a>
+                  </div>
+                
+                </div>
+
+                <div class="col-sm-6">
+                  <h3>A szellem</h3>
+                  <p> Bármi történhet.<br>
+                      Váratlan csapás jöhet.<br>
+                      Egyet kívánok:<br>
+                      őrizd meg a szellemed<br> 
+                      korlátok nélkülinek.</p>
+
+                  <h4>Készségeink</h4>
+                  <div class="progress" style="height: 30px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">HTML 5 -92%</div>
+                  </div>
+                  <div class="progress" style="height: 30px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">CSS 3 -95%</div>
+                  </div>                  
+                  <div class="progress" style="height: 30px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 79%" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">JAVA SCRIPT -79%</div>
+                  </div>
+
+                </div>
+              </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <hr style="width: 80%; height: 4px;">
+      <div class="row" id="courses">
+        <div class="col-12">
+          <h3>Tudjon meg többet a Web Design-ról</h3>
+          <div class="thumbnails row">
+            <div class="col-sm-6">
+              <div class="card" id="web">
+                <div class="badge bg-info text-wrap" id="ar" style="width: 8rem;">
+                  <img src="img/cart3.svg" alt="cart">
+                  26 000 <sup>Ft</sup>
+                </div>
+                <img src="img/web.jpg" class="card-img-top" alt="Vektor grafika">
+                <div class="card-body">
+                  <div class="card-header"><h5 class="card-title">Vektor grafika</h5></div>
+                  <p class="card-text">
+                     Egy Nobushige nevezetű katona elment Hakuinhoz - a zen mesterhez - és a következő kérdést tette fel neki:<br>
+                     - Valóban létezik Paradicsom és Pokol?<br>
+                     - Ki vagy te? - kérdezte Hakuin. <br>
+                     - Szamuráj vagyok - válaszolta a harcos. <br>
+                     - Tehát katona! - kiáltott fel Hakuin.<br>
+                     - Miféle uralkodó fogadna fel téged testőréül? Hiszen olyan a képed mint egy koldusé!<br>
+                       Nobushige a szavak annyira feldühödött, hogy már-már kardot rántott, de Hakuin csak folytatta: <br>
+                     - Szóval kardod is van. Biztosan az is olyan tompa mint a fejed!<br>
+                       Nobushige ekkor kardot rántott. Hakuin felkiáltott:<br>
+                     - Innen nyílnak a Pokol kapui. <br>
+                       E szavakra a katona - megértvén a mester tanítását - visszadugta kardját a hüvelyébe és fejet hajtott.<br>
+                     - És itt nyílik a Paradicsom kapuja. - mondta Hakuin halkan. </p> 
+                </div>                
+                <div class="card-body">
+                  <a class="btn btn-primary btn-sm" href="#" role="button">Részt veszek ezen a tanfolyamon</a>
+                  <a class="btn btn-info btn-sm" href="#" role="button">Tudjon meg többet</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="card" id="web">
+                <div class="badge bg-success text-wrap" id="ar" style="width: 8rem;">
+                  <img src="img/cart3.svg" alt="cart">
+                  FREE </div>
+                <img src="img/bootstrap.png" class="card-img-top" alt="Bootstrap">
+                <div class="card-body">
+                  <div class="card-header"><h5 class="card-title">Bootstrap</h5></div>
+                  <p class="card-text">
+                    Mikor a szépet megismerik,<BR>
+                      felbukkan a rút is;<BR>
+                      mikor a jót megismerik,<BR>
+                      felbukkan a rossz is.<BR>
+                      Lét és nemlét szüli egymást,<BR>
+                      nehéz és könnyű megalkotja egymást,<BR>
+                      hosszú és rövid alakítja egymást,<BR>
+                      magas és mély kulcsolja egymást,<BR>
+                      sok hang összeolvasztja egymást,<BR>
+                      korábbi s későbbi követi egymást.<BR>
+                       Ezért a bölcs<BR>
+                      sürgés nélkül működik,<BR>
+                      szó nélkül tanít,<BR>
+                      nézi az áramlást és hagyja, nem erőlködik,<BR>
+                      alkot, de művét nem birtokolja,<BR>
+                      cselekszik, de nem ragaszkodik,<BR>
+                      beteljesült művét nem félti,<BR>
+                      s mert magának nem őrzi,<BR>
+                      el se veszíti.
+                </div>                
+                <div class="card-body">
+                  <a class="btn btn-primary btn-sm" href="#" role="button">Részt veszek ezen a tanfolyamon</a>
+                  <a class="btn btn-info btn-sm" href="#" role="button">Tudjon meg többet</a>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col-sm-6">  
+            <h4>Rólunk</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit provident ratione consequuntur odio suscipit repellendus saepe? Sed, ea molestiae voluptatibus quas nostrum officia fugit tempora consequatur accusamus dolore vero reiciendis.</p>           
+          </div>
+          <div class="col-sm-3">
+            <h4>Navigáció</h4>  
+            <ul class="unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Links</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">  
+            <h4>Kövess minket</h4>  
+            <ul class="unstyled">
+              <li><a href="#"><img src="img/facebook.svg" alt="Facebook">  Facebook</a></li>
+              <li><a href="#"> <img src="img/twitter.svg" alt="Twitter">  Twitter</a></li>
+              <li><a href="#"> <img src="img/youtube.svg" alt="YouTube">  YouTube</a></li>
+              <li><a href="#"> <img src="img/instagram.svg" alt="Instagram">  Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 copyright">
+            <h6>Copyright &copy; 2021 Hferko</h6>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>   
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

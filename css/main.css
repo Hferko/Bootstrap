@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+body{
+  background-color: bisque;
+}
+
+.navbar{
+    background-color: #630000;    
+}
+
+.navbar-brand{    
+    padding: 5px 15px;
+    color: white;
+}
+
+.dropdown-menu{    
+    width: 250px;
+}
+
+.d-flex{
+    margin:auto;
+    width: 250px;    
+}
+
+.nav-link:hover{
+    color:white;
+}
+
+.carousel-caption{
+  background-color: rgba(240, 248, 248, 0.80);
+  color: darkred;
+  border-radius: 10px;
+  width: auto;
+}
+
+.carousel-indicators{
+  background-color: rgba(160, 60, 40, 0.50);
+  border-radius: 8px;
+}
+
+.kozep{
+  text-align: center;
+}
+
+/*#subscribe{
+  text-align: left;
+}*/
+form button{
+  float: right;
+}
+
+#alertMe{
+  margin-top: 20px;
+  display: none;
+}
+
+#jellem{
+  margin-top: 80px;
+  border-top: 1px solid #bebebe;
+  text-align: center;
+}
+
+#features{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.img-circle{
+ max-width: 200px;
+ margin: auto;
+ padding-top: 1rem;
+}
+
+.tab-pane{
+  padding-top: 10px;
+}
+
+.img-thumbnail{
+  margin: 0 20px 10px 0;
+}
+
+.progress{
+  margin: 5px;  
+  
+  border: 2px solid #bfbfbf;
+}
+
+#courses{
+  margin: 20px 25px;
+}
+
+#ar{
+  font-size: 18px;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  padding: 10px;
+}
+
+hr{  
+  margin: 10px auto;
+}
+
+footer{
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer h4{
+  color: darkorange;
+}
+
+.copyright{
+  text-align: center;
+  margin: 10px 0;
+}
+
+.unstyled, .unstyled a{
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  color: cyan;
+}
